@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Internet Restrictor Retro</string>
+    <string name="accessibility_service_label">Protect browsers — Retro</string>
+    <string name="accessibility_service_description">Detects Chrome, Firefox, Edge, and Opera, shows the gate, and counts active time. It never reads pages, URLs, typing, or screenshots.</string>
+</resources>
