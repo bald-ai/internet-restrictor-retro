@@ -52,7 +52,7 @@ private val BadgeGrey = Color(0xFF171310)
 private val BadgeContentColor = Color(0xFFF5F2EA)
 private const val RESTING_ALPHA = 0.46f
 private const val ACTIVE_ALPHA = 0.96f
-private const val FADE_DELAY_MS = 3_000L
+private const val FADE_DELAY_MS = 2_000L
 private val HORIZONTAL_SWIPE_THRESHOLD = 44.dp
 
 @Composable
@@ -165,13 +165,13 @@ private fun CollapsedBadge(snapshot: StateSnapshot) {
     val progress = (remainingMs.toFloat() / totalMs.toFloat()).coerceIn(0f, 1f)
     val minutes = ceil(remainingMs / MINUTE_MS.toDouble()).toLong()
 
-    Box(Modifier.size(24.dp), contentAlignment = Alignment.Center) {
+    Box(Modifier.size(28.dp), contentAlignment = Alignment.Center) {
         CircularProgressIndicator(
             progress = { progress },
-            modifier = Modifier.size(24.dp),
+            modifier = Modifier.size(28.dp),
             color = BadgeContentColor,
             trackColor = BadgeContentColor.copy(alpha = 0.22f),
-            strokeWidth = 2.5.dp,
+            strokeWidth = 3.dp,
         )
         Text(
             text = minutes.toString(),
