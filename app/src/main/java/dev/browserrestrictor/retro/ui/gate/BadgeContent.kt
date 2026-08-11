@@ -52,7 +52,7 @@ private val BadgeGrey = Color(0xFF171310)
 private val BadgeContentColor = Color(0xFFF5F2EA)
 private const val RESTING_ALPHA = 0.46f
 private const val ACTIVE_ALPHA = 0.96f
-private const val FADE_DELAY_MS = 2_000L
+private const val FADE_DELAY_MS = 1_000L
 private val HORIZONTAL_SWIPE_THRESHOLD = 44.dp
 
 @Composable
