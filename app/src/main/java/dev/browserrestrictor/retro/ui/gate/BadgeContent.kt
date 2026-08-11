@@ -165,13 +165,13 @@ private fun CollapsedBadge(snapshot: StateSnapshot) {
     val progress = (remainingMs.toFloat() / totalMs.toFloat()).coerceIn(0f, 1f)
     val minutes = ceil(remainingMs / MINUTE_MS.toDouble()).toLong()
 
-    Box(Modifier.size(28.dp), contentAlignment = Alignment.Center) {
+    Box(Modifier.size(24.dp), contentAlignment = Alignment.Center) {
         CircularProgressIndicator(
             progress = { progress },
-            modifier = Modifier.size(28.dp),
+            modifier = Modifier.size(24.dp),
             color = BadgeContentColor,
             trackColor = BadgeContentColor.copy(alpha = 0.22f),
-            strokeWidth = 3.dp,
+            strokeWidth = 2.5.dp,
         )
         Text(
             text = minutes.toString(),
@@ -179,11 +179,6 @@ private fun CollapsedBadge(snapshot: StateSnapshot) {
             color = BadgeContentColor,
         )
     }
-    Text(
-        text = "min",
-        style = MaterialTheme.typography.labelSmall,
-        color = BadgeContentColor,
-    )
     DragGrip()
 }
 
