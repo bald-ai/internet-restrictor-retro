@@ -8,8 +8,14 @@
 /release/
 /captures/
 /validation_artifacts/
-AGENTS.md
-ADB_PHONE_CONTROL_PLAYBOOK.md
+
+# Keep local agent instructions and personal notes out of the public repo.
+# Public Markdown documents must be explicitly allowed here.
+*.md
+!/README.md
+!/THIRD_PARTY_NOTICES.md
+/Dev/
+
 .env
 .env.*
 *.jks
